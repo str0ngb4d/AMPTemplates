@@ -2,71 +2,43 @@
     {
         "Protocol": "Both",
         "Port": 26900,
-        "Offset": 0,
-        "Range": 1,
         "Ref": "ServerPort",
-        "Name": "Server and Steam Port",
-        "Description": "Main game traffic and Steam Query port",
-        "ChildPorts": null
+        "Name": "Server Port",
+        "Description": "Game info port advertised with Steam"
     },
     {
         "Protocol": "UDP",
         "Port": 26901,
-        "Offset": 0,
-        "Range": 1,
-        "Ref": "ServerPort1",
-        "Name": "Server Port +1",
-        "Description": "Server Port +1",
-        "ChildPorts": null
+        "Ref": "SteamPort",
+        "Name": "Steam Port",
+        "Description": "Additional Steam port"
     },
     {
         "Protocol": "UDP",
         "Port": 26902,
-        "Offset": 0,
-        "Range": 1,
-        "Ref": "ServerPort2",
-        "Name": "Server Port +2",
-        "Description": "Server Port +2",
-        "ChildPorts": null
+        "Ref": "GameDataPort",
+        "Name": "Game Data Port",
+        "Description": "7DtD game port"
     },
     {
-        "Protocol": "UDP",
+        "Protocol": "TCP",
         "Port": 26903,
-        "Offset": 0,
-        "Range": 1,
-        "Ref": "ServerPort3",
-        "Name": "Server Port +3",
-        "Description": "Server Port +3",
-        "ChildPorts": null
+        "Ref": "TelnetPort",
+        "Name": "Telnet Port",
+        "Description": "Telnet admin port"
     },
     {
         "Protocol": "TCP",
         "Port": 26904,
-        "Offset": 0,
-        "Range": 1,
-        "Ref": "ControlPanelPort",
-        "Name": "Control Panel Port",
-        "Description": "Web panel access port",
-        "ChildPorts": null
+        "Ref": "WebDashboardPort",
+        "Name": "Web Dashboard Port",
+        "Description": "Web dashboard port"
     },
     {
         "Protocol": "TCP",
         "Port": 26905,
-        "Offset": 0,
-        "Range": 1,
-        "Ref": "RemoteAdminPort",
-        "Name": "Telnet Port",
-        "Description": "Telnet traffic port",
-        "ChildPorts": null
-    },
-    {
-        "Protocol": "TCP",
-        "Port": 26906,
-        "Offset": 0,
-        "Range": 1,
-        "Ref": "AllocsModPort",
-        "Name": "Allocs Mod Port",
-        "Description": "Allocs Mod Port",
-        "ChildPorts": null
+        "Ref": "CPMWebPort",
+        "Name": "CPM Web Port",
+        "Description": "CPM claim management web port"
     }
 ]

@@ -4,5 +4,11 @@
         "AutoMap": true,
         "Importable": true,
         "ConfigType": "xml"
+    },
+    {
+        "ConfigFile": "User/Saves/CpmSettings.xml",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "xml"
     }
 ]
